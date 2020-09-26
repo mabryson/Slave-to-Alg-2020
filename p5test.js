@@ -7,14 +7,14 @@ let tileSize
 let loopDuration = 2 * 60
 
 function setup() {
-  createCanvas(1080, 1080)
+  createCanvas(windowWidth, windowHeight)
 
   pg = createGraphics(width, height)
   pg.textFont('Helvetica');
   pg.textAlign(CENTER, CENTER)
   pg.blendMode(SCREEN)
   pg.translate(width / 2, height / 2)
-  pg.textSize(20)
+  pg.textSize(50)
   pg.fill(255)
   pg.text('an idea is clear in one persons mind', 0, 0)
 
