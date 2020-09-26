@@ -1,100 +1,14 @@
-<!DOCTYPE html><html lang="en"><head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-    
-    <meta charset="utf-8">
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-}
-canvas {
-  display: block;
-}
-</style></head>
-  <body>
-    <script>// CURRENT CODES & REFERENCES :
-// [The Coding Train p5.js Tutorials on Youtube]
-// [Wave Circle 3 by Richard Bourne]
-// [for loop - Change Scale + Slider by jarivkin]
-// [2.5: The random() Function - p5.js Tutorial]
-// [I.3: noise() vs random() - Perlin Noise and p5.js Tutorial]
-// [I.4: Graphing 1D Perlin Noise - Perlin Noise and p5.js Tutorial by The Coding Train]
-// [How to display text menu before game starts by Magic Monk on Youtube]
-// [Wavemaker from p5js Examples library]
-//
-      
-        {
-var mode; //determines whether next page is shown
-var bgcolour;
-//let textX=500;
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>
+  <script language="javascript" type="text/javascript" src="p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src=""></script>
 
+  <style> body { padding: 0; margin: 0; } </style>
+</head>
 
-var xoff1 = 0; //x offset for slider 6 visual
-var xoff2 = 10000;
-
-let t = 0; // time variable
-
-}
-
-
-
-function setup() {
-  mode = 0; //setting landing page
-  createCanvas(windowWidth, windowHeight);
-  bgcolour = color(0);
-  textSize(21);
-
-
-  //create text box
-  let col = color(194, 197, 204);
-  input = createInput("");
-  input.position(30, 500);
-  input.size(230, 10);
-  //input.style('background-color',col);
-
-
-  //create save function
-  button = createButton('SAVE');
-  button.position(30, 600);
-  button.size(60, 30);
-  button.mousePressed(save);
-  button.style('background-color', col);
-}
-
-// function changeColour() {
-//   bgcolour = color(random(255));
-// }
-
-function draw() {
-  background(bgcolour);
-
-  //landing page
-  if (mode == 0); {
-    fill(255);
-    text1 = text(' PRESS ENTER TO START', 400, 400);
-  }
-
-
-  //next web page
-  if (mode == 1) {
-
-    text1 = clear();
-    background(bgcolour);
-
-
-  }
-
-
-
-//when enter, page changes
-function keyPressed() {
-
-  if (keyCode === ENTER) {
-    mode = 1;
-  }
-}
-      </script>
-  
-
-</body></html>
+<body>
+</body>
+</html>
