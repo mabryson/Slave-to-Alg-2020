@@ -1,5 +1,4 @@
 let pg
-let font
 let textSize = 1550
 let posOffset = 10
 let sizeOffset = 50
@@ -7,15 +6,11 @@ let tiles = 100
 let tileSize
 let loopDuration = 2 * 60
 
-function preload() {
-  font = loadFont('spacegrotesk-medium.otf')
-}
-
 function setup() {
   createCanvas(1080, 1080)
 
   pg = createGraphics(width, height)
-  pg.textFont(font)
+  pg.textFont('Helvetica');
   pg.textAlign(CENTER, CENTER)
   pg.blendMode(SCREEN)
   pg.translate(width / 2, height / 2)
