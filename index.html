@@ -8,16 +8,30 @@
   </head>
     <body>
     <script> 
-       //landing page
-  if (mode == 0); {
-    fill(255);
-    text1 = text('Press Enter to Start', 400, 400);
+var mode; //determine whether the page has started 
+function setup() {
+mode = 0; // initally the page has not started 
+createCanvas(windowWidth, windowHeight);
+textSize(21); 
+
+}
+
+
+function draw() {
+  clear();
+  if (mode==0) {
+   fill(255);
+   text('Press enter to start',20,100);  
+}
+  if (mode==1) {
+  ellipse(100,100,100,100);
   }
-   //next web page
-  if (mode == 1) {
-    fill(209,242,201);
-    text1 = clear();
+}
+function keyPressed(){
+  if(keyCode==ENTER){
+    mode=1;
   }
+}
       
     </body>
 </html>
