@@ -16,7 +16,7 @@ function setup() {
   pg.translate(width / 2, height / 2)
   pg.textSize(70)
   pg.fill(255)
-  pg.text('an idea is clear in one persons mind', 0, 0)
+  pg.text('the internet is forever', 0, 0)
 
   tileSize = width / tiles
 
