@@ -14,14 +14,14 @@ function setup() {
   pg.textAlign(CENTER, CENTER)
   pg.blendMode(SCREEN)
   pg.translate(width / 2, height / 2)
-  pg.textSize(100)
+  pg.textSize(70)
   pg.fill(255)
   pg.text('an idea is clear in one persons mind', 0, 0)
 
   tileSize = width / tiles
 
   // how fast the animation is running
-  frameRate(0.4)
+  frameRate(0.5)
 }
 
 function draw() {
