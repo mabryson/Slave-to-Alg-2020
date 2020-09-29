@@ -21,7 +21,7 @@ function setup() {
   tileSize = width / tiles
 
   // how fast the animation is running
-  frameRate(0.5)
+  frameRate(10)
 }
 
 function draw() {
