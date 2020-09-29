@@ -2,7 +2,7 @@ let pg
 let textSize = 1550
 let posOffset = 10
 let sizeOffset = 50
-let tiles = 100
+let tiles = 1000
 let tileSize
 let loopDuration = 2 * 60
 
