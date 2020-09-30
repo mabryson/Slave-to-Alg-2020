@@ -6,8 +6,14 @@ let tiles = 1000
 let tileSize
 let loopDuration = 2 * 60
 
+function windowResized() {
+resizeCanvas()
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight)
+  canvas.position(0,0);
+  canvas.style(z-index', '-1');
 
   pg = createGraphics(width, height)
   pg.textFont('Helvetica');
