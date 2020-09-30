@@ -2,6 +2,8 @@ body
 {
   margin: 0; 
   padding: 0; 
+  background: url(p5test.js);
+  background-size: cover; 
   font-family: 'Helvectica', sans-serif; 
 }
 section
