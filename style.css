@@ -24,9 +24,14 @@ section .scroll div
   white-space: nowrap; 
   font-weight: 900; 
   text-transform: uppercase; 
-  animation: animate 40s linear infinitie; 
+  animation: animate 40s linear infinite; 
+  animation-delay: -40s;
 }
-section .scroll div 
+section .scroll div:nth-child(2)
+{
+  animation: animate2 40s linear infinite; 
+  animation-delay: - 20s;
+}
 @keyframes animate
 {
   0%
@@ -36,5 +41,16 @@ section .scroll div
     100%
   {
     transform: translateX(-100%); 
+  }
+}
+@keyframes animate2
+{
+  0%
+  {
+    transform: translateX(0%); 
+  }
+    100%
+  {
+    transform: translateX(-200%); 
   }
 }
