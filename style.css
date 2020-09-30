@@ -19,7 +19,7 @@ section .scroll
 }
 section .scroll div 
 {
-    color: #100: 
+    color: #000: 
      font-size: 4em; 
     background: #DBD0F2; 
   white-space: nowrap; 
@@ -28,30 +28,14 @@ section .scroll div
   animation: animate 40s linear infinite; 
   animation-delay: -40s;
 }
-section .scroll div:nth-child(2)
+@keyframes animate
 {
-  animation: animate2 40s linear infinite; 
-  animation-delay: - 20s;
-}
-@keyframes: animate
-{
-  0%
+  0% 
   {
-    transform: translateX(100%); 
+  transform: translateX(100%);
   }
-    100%
+  100%
   {
-    transform: translateX(-100%); 
-  }
-}
-@keyframes: animate2
-{
-  0%
-  {
-    transform: translateX(0%); 
-  }
-    100%
-  {
-    transform: translateX(-200%); 
+  transform: translateX(-100%);
   }
 }
