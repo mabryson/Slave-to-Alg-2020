@@ -1,1 +1,40 @@
-yea????
+body 
+{
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Helvectica', sans-serif; 
+}
+section
+{
+  position: relative; 
+  width: 100%; 
+  height: 100vh; 
+  overflow: hidden; 
+} 
+section .scroll 
+{
+  width: 100% 
+  display: flex; 
+}
+section .scroll div 
+{
+    color: #100: 
+     font-size: 4em; 
+    background: #fff; 
+  white-space: nowrap; 
+  font-weight: 900; 
+  text-transform: uppercase; 
+  animation: animate 40s linear infinitie; 
+}
+section .scroll div 
+@keyframes animate
+{
+  0%
+  {
+    transform: translateX(100%); 
+  }
+    100%
+  {
+    transform: translateX(-100%); 
+  }
+}
