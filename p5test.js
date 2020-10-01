@@ -1,4 +1,3 @@
-let button;
 let pg
 let textSize = 1550
 let posOffset = 10
@@ -13,14 +12,6 @@ resizeCanvas()
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  
-  button = createButton("PRESS");
-  button.mouseClicked(moveButton);
-  button.size(200,100);
-  button.position(10,10);
-  button.style("Helvectica");
-  button.style("font-size", "48px");
-  button.style("color","#eaf205")
   
   pg = createGraphics(width, height)
   pg.textFont('Helvetica');
@@ -63,9 +54,6 @@ function draw() {
       
       image(pg, dx, dy, dw, dh, sx, sy, sw, sh);
       
-      
-function moveButton() {
-  button.position (random(width), random(height));
 }
     }
   }
