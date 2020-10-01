@@ -53,8 +53,6 @@ function draw() {
       const dh = tileSize
       
       image(pg, dx, dy, dw, dh, sx, sy, sw, sh);
-      
-}
     }
   }
 }
