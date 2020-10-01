@@ -1,7 +1,7 @@
 let button;
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(400,400);
   button = createButton("PRESS");
   button.mouseClicked(moveButton);
   button.size(200,100);
@@ -15,6 +15,4 @@ function draw (){
   background(0);
 }
 
-function moveButton() {
-  button.position (random(width), random(height));
-}
+
