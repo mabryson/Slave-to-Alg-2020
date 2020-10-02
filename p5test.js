@@ -3,7 +3,6 @@ let textSize = 1550;
 let tiles = 250;
 let tileSize;
 let loopDuration = 3 * 60;
-let button;
 
 function windowResized() {
 resizeCanvas();
@@ -27,14 +26,7 @@ function setup() {
 }
 
 function draw() {
-  button = createButton("PRESS");
-  button.mouseClicked(moveButton);
-  button.size(200,100);
-  button.position(10,10);
-  button.style("Helvectica");
-  button.style("font-size", "48px");
-  button.style("color","#eaf205");
-  
+ 
   background('#000');
 
   let currentFrame = frameCount % loopDuration;
