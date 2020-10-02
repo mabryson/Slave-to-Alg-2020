@@ -1,4 +1,4 @@
-llet pg;
+let pg;
 let textSize = 1550;
 let tiles = 250;
 let tileSize;
