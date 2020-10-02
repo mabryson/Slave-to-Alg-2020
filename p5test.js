@@ -63,7 +63,3 @@ function draw() {
   }
 }
 
-
-function moveButton() {
-  button.position (random(width), random(height));
-}
