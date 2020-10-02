@@ -1,7 +1,5 @@
 let pg
 let textSize = 1550
-let posOffset = 10
-let sizeOffset = 50
 let tiles = 1000
 let tileSize
 let loopDuration = 2 * 60
@@ -24,12 +22,12 @@ function setup() {
   tileSize = width / tiles
 
   // how fast the animation is running
-  frameRate(1)
+  frameRate(30)
 }
 
 function draw() {
   
-  background('rgba(0, 0, 0, 1)')
+  background('#000')
 
   let currentFrame = frameCount % loopDuration
   let t = currentFrame / loopDuration
