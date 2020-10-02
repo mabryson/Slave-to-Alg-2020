@@ -1,6 +1,6 @@
 let pg
 let textSize = 1550
-let tiles = 100
+let tiles = 300
 let tileSize
 let loopDuration = 3 * 60
 
