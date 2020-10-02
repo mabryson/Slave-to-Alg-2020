@@ -28,8 +28,6 @@ function setup() {
 }
 
 function draw() {
-  
-  background('rgba(0, 0, 0, 1)')
 
   let currentFrame = frameCount % loopDuration
   let t = currentFrame / loopDuration
