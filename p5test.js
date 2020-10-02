@@ -16,7 +16,6 @@ function setup() {
   pg = createGraphics(width, height)
   pg.textFont('Helvetica');
   pg.textAlign(CENTER, CENTER)
-  pg.blendMode(SCREEN)
   pg.translate(width / 2, height / 2)
   pg.textSize(70)
   pg.fill(255)
