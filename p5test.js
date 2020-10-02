@@ -2,7 +2,7 @@ let pg
 let textSize = 1550
 let tiles = 100
 let tileSize
-let loopDuration = 2 * 60
+let loopDuration = 3 * 60
 
 function windowResized() {
 resizeCanvas()
