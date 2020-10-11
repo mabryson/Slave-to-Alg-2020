@@ -1,3 +1,4 @@
+var clicks = 0;
 let pg;
 let textSize = 1550;
 let tiles = 250;
@@ -10,7 +11,9 @@ resizeCanvas();
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  noLoop();
   
+  //animation formatting
   pg = createGraphics(width, height);
   pg.textFont('Helvetica');
   pg.textAlign(CENTER, CENTER);
@@ -22,6 +25,7 @@ function setup() {
   tileSize = width / tiles;
 
   // how fast the animation is running
+  // this significantly impacts how glitvhy the final webpage is 
   frameRate(10);
 }
 
@@ -29,6 +33,10 @@ function draw() {
  
   background('#000');
 
+//movement + distortion  
+//reference: Wave Movement by dansakamoto 
+//reference: sine wave by daniel shiffman
+//reference: additive wave by daniel shiffman
   let currentFrame = frameCount % loopDuration;
   let t = currentFrame / loopDuration;
   let u = map(t, 0, 1, 0, PI);
@@ -55,3 +63,15 @@ function draw() {
   }
 }
 
+function mousePressed(){
+loop();
+}
+
+function mouseReleased(){
+ noLoop();
+}
+
+function mouseClicked(){
+//add 1 to variable clicks
+clicks ++;
+}
