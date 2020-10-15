@@ -1,4 +1,4 @@
-var clicks = 0;
+
 let pg;
 let textSize = 1550;
 let tiles = 250;
@@ -25,7 +25,7 @@ function setup() {
   tileSize = width / tiles;
 
   // how fast the animation is running
-  // this significantly impacts how glitvhy the final webpage is 
+  // this significantly impacts how glitchy the final webpage is 
   frameRate(10);
 }
 
@@ -69,9 +69,4 @@ loop();
 
 function mouseReleased(){
  noLoop();
-}
-
-function mouseClicked(){
-//add 1 to variable clicks
-clicks ++;
 }
