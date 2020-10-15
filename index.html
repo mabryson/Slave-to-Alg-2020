@@ -36,14 +36,13 @@
    </section>
     <section id="button">
     <script type="text/javascript">
-
     var clicks = 0;
-    function hello() {
+    function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onclick="hello()">click me</button>
+    <button type="button" onClick="onClick()">click me</button>
     <p>Clicks: <a id="clicks">0</a></p>
   </section>
 </body>
