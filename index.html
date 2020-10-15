@@ -28,7 +28,17 @@
  PRESS BUTTON ADD TO THE: DESTRUCTION PRESS BUTTON ADD TO THE: DESTRUCTION PRESS BUTTON ADD TO THE: DESTRUCTION  PRESS BUTTON ADD TO THE: DESTRUCTION PRESS BUTTON ADD TO THE: DESTRUCTION PRESS BUTTON ADD TO THE: DESTRUCTION        </div>
     </div>   
    </section>
-  <div>
-  </div>
+    <section>
+    <script type="text/javascript">
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onclick="hello()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+  </section>
 </body>
 </html>
